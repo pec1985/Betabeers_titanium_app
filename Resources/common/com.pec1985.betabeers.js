@@ -1,7 +1,7 @@
 function ServerCall(params) {
     
     if(!Ti.Network.online) {
-        Ti.UI.createDialog({
+        Ti.UI.createAlertDialog({
             title: 'Error',
             message: 'Internet connection required'
         }).show();
